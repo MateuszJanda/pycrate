@@ -1,0 +1,3 @@
+# Ordered list of LTE RRC modules
+# to be loaded sequentially
+PCCH-Message-Definition.asn
