@@ -3,7 +3,7 @@
 
 """
 Compile Python sources from your own ASN.1 definitions
-python ./tools/pycrate_asn1compile.py -i ./pycrate_asn1dir/3GPP_EUTRAN_SUBSET/ -o ltemini -j
+python ./tools/pycrate_asn1compile.py -i ./pycrate_asn1dir/3GPP_EUTRAN_MINIMAL/ -o lte_asn -j
 """
 
 import ltemini
@@ -18,7 +18,7 @@ def decode_own_payload():
     # List all PDUs from definitions
     # print(dir(ltemini.PCCH_Message_Definition))
 
-    pdu = ltemini.PCCH_Message_Definition.PCCH_Message
+    pdu = lte_asn.PCCH_Message_Definition.PCCH_Message
     pdu.from_uper(unhexlify('0b00'))
     print(pdu.to_asn1())
 
