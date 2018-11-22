@@ -6,7 +6,7 @@ Compile Python sources from your own ASN.1 definitions
 python ./tools/pycrate_asn1compile.py -i ./pycrate_asn1dir/3GPP_EUTRAN_MINIMAL/ -o lte_asn -j
 """
 
-import ltemini
+import lte_asn
 from binascii import unhexlify, hexlify
 
 
